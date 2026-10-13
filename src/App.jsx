@@ -17,7 +17,7 @@ export default function App() {
 
   return (
     <ThemeContext.Provider value={{ theme, toggle }}>
-      <BrowserRouter>
+      <BrowserRouter basename="/learn-ai">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
